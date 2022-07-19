@@ -321,6 +321,10 @@ li {
         justify-content: center;
     }
 
+
+
+
+
     /* middel content css  */
     .main-area {
         display: grid;
@@ -336,7 +340,6 @@ li {
         flex-direction: column;
         height: fit-content;
         background-color: #fff;
-
         padding: 15px;
         border-radius: 10px;
         text-align: center;
@@ -363,6 +366,10 @@ li {
     }
 
     .head-area img {
+        transform: translateX(0px) scale(150%);
+    }
+
+    .head-area:hover img {
         transform: translateX(0px) scale(150%);
     }
 
