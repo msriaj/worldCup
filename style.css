@@ -1,3 +1,4 @@
+/* css for desktop and default */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
@@ -21,7 +22,7 @@ h3 {
 
 
 
-/* css for desktop and default */
+
 
 .container {
     max-width: 1200px;
@@ -52,7 +53,7 @@ h3 {
     padding: 12px;
     border-radius: 5px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
     transition: background .5s ease-in-out, color .5s ease-in-out;
     max-width: 150px;
     border: none;
@@ -62,6 +63,10 @@ h3 {
     color: #DD0000;
     background: #ffffff;
     cursor: pointer;
+}
+
+.btn-red i {
+    margin-left: 10px;
 }
 
 .head-content {
@@ -117,7 +122,7 @@ h3 {
 }
 
 .sidebar a {
-    color: #000;
+    color: #161616;
     background: #fff;
     border-radius: 5px;
     padding: 15px 10px;
@@ -152,9 +157,9 @@ h3 {
 /* singel post css  */
 .post-card {
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #E8E8E8;
     overflow: hidden;
-    box-shadow: 5px 5px 10px #ddd;
+    box-shadow: 5px 5px 10px #E8E8E8;
 }
 
 .post-content {
@@ -162,10 +167,10 @@ h3 {
 }
 
 .post-cat {
-    border: 1px solid #000;
+    border: 1px solid #161616;
     padding: 5px 10px;
     border-radius: 5px;
-    color: #000;
+    color: #161616;
 
 }
 
@@ -189,11 +194,11 @@ h3 {
 }
 
 .post-card:hover {
-    box-shadow: 10px 10px 10px #ddd;
+    box-shadow: 10px 10px 20px #ddd;
 }
 
 .post-card:hover .post-cat {
-    background-color: #000;
+    background-color: #161616;
     color: #fff;
 }
 
@@ -234,7 +239,9 @@ footer {
     margin: 0px 10px;
 }
 
-
+footer a:hover {
+    color: #DD0000;
+}
 
 /* end  social icons css */
 
@@ -337,7 +344,7 @@ li {
     }
 
     .sidebar a {
-        border: 1px solid #161616;
+        border: 1px solid #E8E8E8;
     }
 
     .content-area {
@@ -356,7 +363,7 @@ li {
     }
 
     .head-area img {
-        transform: translateX(-70px) scale(150%);
+        transform: translateX(0px) scale(150%);
     }
 
     li {
@@ -367,9 +374,43 @@ li {
 }
 
 
+.match-day {
+    padding: 20px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
 
-/* Medium devices ( tablets, 601 to 720px)  */
-@media only screen and (min-width: 768px) and (max-width: 960px) {
+.flags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+.group-head {
+    text-align: center;
+
+}
+
+.group-head p {
+    color: #978888;
+
+}
+
+
+.group-list {
+    border-top: #E8E8E8 1px solid;
+    padding-top: 20px;
+}
+
+/* Medium devices ( tablets, 601 to 960px)  */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
 
 
     .container {
@@ -416,7 +457,7 @@ li {
     }
 
     .sidebar a {
-        border: 1px solid #161616;
+        border: 1px solid #E8E8E8;
         width: 33%;
     }
 
