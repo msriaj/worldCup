@@ -1,4 +1,6 @@
+/* ------------------------------------------- */
 /* css for desktop and default */
+/* ------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
@@ -20,18 +22,15 @@ h3 {
     font-size: 20px;
 }
 
-
-
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 
-
+/* ------------------------------------------- */
 /* head section css  */
+/* ------------------------------------------- */
 .head-area {
     background-color: #161616;
     color: #ffffff;
@@ -71,7 +70,7 @@ h3 {
 
 .head-content {
     width: 60%;
-    animation: 1.5s ease-in-out 0s slideleft;
+    animation: 1.8s ease-in-out 0s slideleft;
 }
 
 .head-content p {
@@ -80,7 +79,7 @@ h3 {
 
 .head-model img {
     transform: translateX(100px);
-    transition: transform 1s ease-in-out;
+    transition: transform 2s ease-in-out;
 
 }
 
@@ -99,17 +98,19 @@ h3 {
 /* end head section css  */
 
 
-
+/* ------------------------------------------- */
 /* middel content css  */
+/* ------------------------------------------- */
 .main-area {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 250px 1fr;
     column-gap: 20px;
     padding-top: 50px;
 }
 
-
+/* ------------------------------------------- */
 /* side bar css  */
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -144,6 +145,7 @@ h3 {
     border: none;
 }
 
+/* ------------------------------------------- */
 /* end sidebar css  */
 
 .content-area {
@@ -154,6 +156,7 @@ h3 {
     animation: 1s ease-out 0s slideright;
 }
 
+/* ------------------------------------------- */
 /* singel post css  */
 .post-card {
     border-radius: 10px;
@@ -202,18 +205,61 @@ h3 {
     color: #fff;
 }
 
+/* ------------------------------------------- */
 /* end post css  */
 
 .pad-only {
     display: none;
 }
 
+/* ------------------------------------------- */
 /* end middel content css  */
+/* ------------------------------------------- */
 
 
+/* ------------------------------------------- */
+/* css for match-day page */
+/* ------------------------------------------- */
+.match-day {
+    padding: 20px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
 
+.flags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------------- */
+/* css for group page  */
+/* ------------------------------------------- */
+.group-head {
+    text-align: center;
+
+}
+
+.group-head p {
+    color: #978888;
+
+}
+
+
+.group-list {
+    border-top: #E8E8E8 1px solid;
+    padding-top: 20px;
+}
+
+
+/* ------------------------------------------- */
 /* footer css  */
-
+/* ------------------------------------------- */
 footer {
     background-color: #161616;
     margin-top: 30px;
@@ -227,29 +273,43 @@ footer {
     margin: 50px 0px;
 }
 
-
+/* ------------------------------------------- */
 /* social icons css */
 
 .social-icons {
-    margin-top: 20px;
+    margin: 30px 0px;
+
 }
 
 .social {
-    font-size: 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    font-size: 20px;
     margin: 0px 10px;
+    border-radius: 50%;
 }
 
-footer a:hover {
-    color: #DD0000;
+.social:hover {
+    background-color: #DD0000;
+    color: #ffffff;
 }
 
+
+/* ------------------------------------------- */
 /* end  social icons css */
 
-
+/* ------------------------------------------- */
 /* footer menu css  */
 footer a {
     color: #fff;
     font-weight: 400;
+}
+
+footer a:hover {
+    color: #DD0000;
 }
 
 ul {
@@ -267,9 +327,15 @@ li {
     border-top: #242323 1px solid;
 }
 
+/* ------------------------------------------- */
 /* end footer menu css  */
+/* ------------------------------------------- */
 
-/* animation css  */
+
+
+/* ------------------------------------------- */
+/* animation keyfreames css  */
+/* ------------------------------------------- */
 @keyframes slideleft {
     0% {
         transform: translateX(-2%);
@@ -290,13 +356,23 @@ li {
     }
 }
 
+/* ------------------------------------------- */
 /* end animation css  */
+/* ------------------------------------------- */
 
 
 
+
+/* ------------------------------------------- */
 /* start responsiv css  */
+/* ------------------------------------------- */
 
+
+
+/* ------------------------------------------- */
 /* Small devices (phones, 600px and down) */
+
+
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%;
@@ -312,6 +388,12 @@ li {
         text-align: center;
     }
 
+    .head-content p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     .btn-red {
         margin: 0 auto;
     }
@@ -319,35 +401,6 @@ li {
     .head-content {
         display: flex;
         justify-content: center;
-    }
-
-
-
-
-
-    /* middel content css  */
-    .main-area {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 20px;
-        padding-top: 50px;
-    }
-
-
-    /* side bar css  */
-    .sidebar {
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-        animation: 1s ease-in-out 0s slideleft;
-    }
-
-    .sidebar a {
-        border: 1px solid #E8E8E8;
     }
 
     .content-area {
@@ -378,43 +431,40 @@ li {
         margin: 20px;
     }
 
+
+    /* ------------------------------------------- */
+    /* middel content css  */
+    .main-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding-top: 50px;
+    }
+
+    /* ------------------------------------------- */
+    /* side bar css  */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        animation: 1s ease-in-out 0s slideleft;
+    }
+
+    .sidebar a {
+        border: 1px solid #E8E8E8;
+    }
+
+
 }
 
 
-.match-day {
-    padding: 20px 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: none;
-}
-
-.flags {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    margin-bottom: 15px;
-}
 
 
 
-.group-head {
-    text-align: center;
-
-}
-
-.group-head p {
-    color: #978888;
-
-}
-
-
-.group-list {
-    border-top: #E8E8E8 1px solid;
-    padding-top: 20px;
-}
 
 /* Medium devices ( tablets, 601 to 960px)  */
 @media only screen and (min-width: 601px) and (max-width: 960px) {
