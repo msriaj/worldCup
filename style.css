@@ -40,7 +40,7 @@ h3 {
     color: #ffffff;
     padding: 0 120px;
     border-radius: 10px;
-    width: 50;
+    height: 80vh;
     display: flex;
     overflow: hidden;
 }
@@ -95,6 +95,7 @@ h3 {
 .head-model {
     padding-right: 50px;
     width: 40%;
+    display: flex;
     background: radial-gradient(rgba(255, 255, 255, 0.199), #16161667, #161616);
     transition: background 1s ease-in-out;
 }
@@ -390,6 +391,7 @@ li {
     .head-area {
         padding: 50px;
         flex-direction: column;
+        height: max-content;
     }
 
     .head-content {
@@ -428,11 +430,11 @@ li {
     }
 
     .head-area img {
-        transform: translateX(0px) scale(150%);
+        transform: translateX(0px) scale(130%);
     }
 
     .head-area:hover img {
-        transform: translateX(0px) scale(150%);
+        transform: translateX(0px) scale(130%);
     }
 
     li {
@@ -488,6 +490,7 @@ li {
 
     .head-area {
         padding: 50px;
+        height: max-content;
 
     }
 
@@ -499,6 +502,20 @@ li {
     .head-content {
         display: flex;
         justify-content: center;
+    }
+
+    .head-model {
+        width: 30%;
+        padding-top: 50px;
+        margin-bottom: -50px;
+    }
+
+    .head-area img {
+        transform: translateX(100px) scale(140%);
+    }
+
+    .head-area:hover img {
+        transform: translateX(100px) scale(140%);
     }
 
     /* middel content css  */
