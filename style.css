@@ -9,6 +9,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    padding-top: 20px;
+}
+
 img {
     width: 100%;
 }
@@ -363,17 +367,22 @@ li {
 
 
 
+
+
+
+
 /* ------------------------------------------- */
 /* start responsiv css  */
 /* ------------------------------------------- */
 
 
-
 /* ------------------------------------------- */
-/* Small devices (phones, 600px and down) */
+/* Small devices (phones, 767px and down) */
+@media only screen and (max-width: 767.98px) {
+    body {
+        padding-top: 0px;
+    }
 
-
-@media only screen and (max-width: 600px) {
     .container {
         width: 100%;
     }
@@ -465,10 +474,13 @@ li {
 
 
 
+/* ------------------------------------------------- */
+/* Medium devices ( tablets, 786px to 991px)  */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
 
-/* Medium devices ( tablets, 601 to 960px)  */
-@media only screen and (min-width: 601px) and (max-width: 960px) {
-
+    body {
+        padding-top: 0px;
+    }
 
     .container {
         width: 100%;
